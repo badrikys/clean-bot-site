@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Bot - Contact Us</title>
+    <title>Clean Bot - Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Clean Bot</a>
+            <button class="nav-toggle" id="nav-toggle"><span class="material-icons-outlined">menu</span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contact.html" class="cta">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
+
     <header class="hero">
-        <h1>Contact Us</h1>
-        <p>Get in touch with the Clean Bot team.</p>
+        <h1>Свяжитесь с нами</h1>
+        <p>Мы всегда готовы ответить на ваши вопросы.</p>
     </header>
+
     <main>
         <section>
-            <h2>Contact Information</h2>
+            <h2>Контактная информация</h2>
+            <p>Телефон: +7 (999) 123‑45‑67</p>
             <p>Email: info@cleanbot.example.com</p>
-            <p>Phone: +1 (555) 123-4567</p>
+            <p>Адрес: г. Москва, ул. Примерная, 1</p>
         </section>
+
         <section>
-            <h2>Send Us a Message</h2>
+            <h2>Форма обратной связи</h2>
             <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4"></textarea><br><br>
-                <button type="submit" class="cta">Send</button>
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="4" placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Clean Bot</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

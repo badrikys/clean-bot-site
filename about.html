@@ -1,36 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Bot - About Us</title>
+    <title>Clean Bot - О компании</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Clean Bot</a>
+            <button class="nav-toggle" id="nav-toggle"><span class="material-icons-outlined">menu</span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contact.html" class="cta">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
+
     <header class="hero">
-        <h1>About Clean Bot</h1>
-        <p>Learn about our story and mission.</p>
+        <h1>О компании Clean Bot</h1>
+        <p>Мы заботимся о чистоте вашего дома и вашего времени.</p>
     </header>
+
     <main>
         <section>
-            <h2>Our Mission</h2>
-            <p>Placeholder text describing the company's mission and values.</p>
+            <h2>Наша миссия</h2>
+            <p>Clean Bot стремится предоставить жителям города профессиональные и удобные услуги уборки. Мы ценим доверие клиентов и делаем всё, чтобы оправдать его.</p>
         </section>
         <section>
-            <h2>Our Team</h2>
-            <p>Overview of the professionals behind Clean Bot.</p>
+            <h2>Профессиональная команда</h2>
+            <p>Наши клинеры проходят обязательное обучение и используют только проверенные и безопасные средства. Мы стараемся, чтобы каждая уборка оставляла исключительно приятные впечатления.</p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Clean Bot</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

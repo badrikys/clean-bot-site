@@ -1,36 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Bot - Services</title>
+    <title>Clean Bot - Услуги и цены</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Clean Bot</a>
+            <button class="nav-toggle" id="nav-toggle"><span class="material-icons-outlined">menu</span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contact.html" class="cta">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
+
     <header class="hero">
-        <h1>Our Services</h1>
-        <p>Learn more about what Clean Bot can do for you.</p>
+        <h1>Услуги и цены</h1>
+        <p>Выберите подходящий вариант или воспользуйтесь калькулятором.</p>
     </header>
+
     <main>
-        <section>
-            <h2>Service Categories</h2>
-            <p>Placeholder overview of different cleaning packages and options.</p>
+        <nav class="services-nav">
+            <a href="#cleaning">Уборка</a>
+            <a href="#equipment">Доставка оборудования</a>
+            <a href="#windows">Мытьё окон</a>
+            <a href="#dryclean">Химчистка</a>
+        </nav>
+
+        <section id="cleaning">
+            <h2>Уборка</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Поддерживающая уборка</h3>
+                    <p>Поддержание чистоты в квартире или доме.</p>
+                    <p class="price">от 3990 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+                <div class="service-item">
+                    <h3>Генеральная уборка</h3>
+                    <p>Тщательная уборка во всех помещениях.</p>
+                    <p class="price">от 6990 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+                <div class="service-item">
+                    <h3>Уборка после ремонта</h3>
+                    <p>Удаление строительной пыли и мусора.</p>
+                    <p class="price">от 11990 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Custom Solutions</h2>
-            <p>Information about tailoring services to specific needs.</p>
+
+        <section id="equipment">
+            <h2>Доставка оборудования</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Доставка оборудования</h3>
+                    <p>Комплект профессиональной техники.</p>
+                    <p class="price">3490 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Добавить</a>
+                </div>
+                <div class="service-item">
+                    <h3>Доставка оборудования и стремянки</h3>
+                    <p>Для работы на высоте.</p>
+                    <p class="price">5990 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Добавить</a>
+                </div>
+            </div>
         </section>
+
+        <section id="windows">
+            <h2>Мытьё окон</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Мытьё стандартных окон</h3>
+                    <p>Качественное удаление загрязнений.</p>
+                    <p class="price">от 450 ₽ / створка</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+                <div class="service-item">
+                    <h3>Мытьё балконов</h3>
+                    <p>Чистим балконные блоки и рамы.</p>
+                    <p class="price">от 2890 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dryclean">
+            <h2>Химчистка</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Химчистка дивана</h3>
+                    <p>Удаление пятен и запахов.</p>
+                    <p class="price">от 2990 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+                <div class="service-item">
+                    <h3>Химчистка матраса</h3>
+                    <p>Безопасная обработка любых материалов.</p>
+                    <p class="price">от 1890 ₽</p>
+                    <a href="calculator.html" class="cta-btn">Рассчитать</a>
+                </div>
+            </div>
+        </section>
+
+        <p style="text-align:center; margin-top:2rem;">
+            Полный список услуг доступен в <a href="calculator.html">калькуляторе</a>.
+        </p>
     </main>
+
     <footer>
         <p>&copy; 2024 Clean Bot</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

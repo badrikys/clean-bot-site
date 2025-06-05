@@ -1,37 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Bot - Home</title>
+    <title>Clean Bot - Клининговые услуги</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Clean Bot</a>
+            <button class="nav-toggle" id="nav-toggle"><span class="material-icons-outlined">menu</span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contact.html" class="cta">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
+
     <header class="hero">
-        <h1>Welcome to Clean Bot</h1>
-        <p>Your one stop solution for cleaning services.</p>
-        <a href="services.html" class="cta">View Services</a>
+        <h1>Clean Bot: Идеальная чистота вашего дома без усилий!</h1>
+        <p>Профессиональные клининговые услуги. Быстро, качественно, надежно.</p>
+        <a href="calculator.html" class="cta-btn">Рассчитать стоимость уборки</a>
     </header>
+
     <main>
-        <section class="overview">
-            <h2>Service Overview</h2>
-            <p>Placeholder text summarizing our key service offerings.</p>
+        <section class="services-preview" id="services">
+            <h2>Наши услуги</h2>
+            <div class="cards">
+                <div class="service-card">
+                    <span class="material-icons-outlined icon">home</span>
+                    <h3>Поддерживающая уборка</h3>
+                    <p>Регулярная чистота и порядок в вашем доме.</p>
+                    <a href="services.html#cleaning">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <span class="material-icons-outlined icon">construction</span>
+                    <h3>Уборка после ремонта</h3>
+                    <p>Избавим помещение от строительной пыли и мусора.</p>
+                    <a href="services.html#cleaning">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <span class="material-icons-outlined icon">window</span>
+                    <h3>Мытьё окон</h3>
+                    <p>Блестящие окна без разводов и пятен.</p>
+                    <a href="services.html#windows">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <span class="material-icons-outlined icon">local_laundry_service</span>
+                    <h3>Химчистка мебели</h3>
+                    <p>Безопасное удаление пятен и запахов.</p>
+                    <a href="services.html#dryclean">Подробнее</a>
+                </div>
+            </div>
         </section>
-        <section class="feature">
-            <h2>Why Choose Us</h2>
-            <p>Highlight advantages and unique features of Clean Bot.</p>
+
+        <section class="advantages">
+            <h2>Почему выбирают нас?</h2>
+            <ul>
+                <li><span class="material-icons-outlined">verified</span><p>Опытные клинеры</p></li>
+                <li><span class="material-icons-outlined">eco</span><p>Эко-средства</p></li>
+                <li><span class="material-icons-outlined">thumb_up</span><p>Гарантия качества</p></li>
+                <li><span class="material-icons-outlined">shopping_cart</span><p>Онлайн‑заказ</p></li>
+            </ul>
+        </section>
+
+        <section class="steps">
+            <h2>Как это работает?</h2>
+            <div class="step-list">
+                <div class="step">1. Вы оставляете заявку</div>
+                <div class="step">2. Мы уточняем детали и стоимость</div>
+                <div class="step">3. Наш клинер приезжает в удобное время</div>
+                <div class="step">4. Вы наслаждаетесь чистотой</div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">"Все чисто и аккуратно. Буду обращаться ещё!" — Мария</div>
+                <div class="testimonial">"Отличный сервис и вежливые сотрудники." — Иван</div>
+                <div class="testimonial">"Быстро и качественно, рекомендую." — Ольга</div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Оставьте заявку, и мы перезвоним!</h2>
+            <form>
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <button type="submit">Отправить</button>
+            </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Clean Bot</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
