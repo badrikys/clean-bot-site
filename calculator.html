@@ -7,10 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- HTML остается прежним -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Clean Bot</a>
+            <button class="nav-toggle" id="nav-toggle"><span class="material-icons-outlined">menu</span></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contact.html" class="cta">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="calculator-layout">
         <nav class="navigation-sidebar" id="navigation-sidebar-container">
             <h2>Категории</h2>
@@ -32,6 +46,6 @@
         </aside>
     </div>
     <script src="js/calculator.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
