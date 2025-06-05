@@ -1,0 +1,874 @@
+<!DOCTYPE html> <html> <head> <meta charset="utf-8" /> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock--> <title>Калькулятор Clean Bot — Расчёт стоимости услуг</title> <meta name="description" content="Внутренний инструмент для менеджеров компании Clean Bot: точный расчёт стоимости уборки, химчистки мебели и мойки окон. Учитываются площади, доп.услуги и акции." /> <meta property="og:url" content="https://clean-bot.ru/service-calculator-2" /> <meta property="og:title" content="Калькулятор Clean Bot — Расчёт стоимости услуг" /> <meta property="og:description" content="Внутренний инструмент для менеджеров компании Clean Bot: точный расчёт стоимости уборки, химчистки мебели и мойки окон. Учитываются площади, доп.услуги и акции." /> <meta property="og:type" content="website" /> <meta property="og:image" content="images/tild3833-3465-4131-b534-643736646330__chatgpt_image_may_30.png" /> <link rel="canonical" href="https://clean-bot.ru/service-calculator-2"> <!--/metatextblock--> <meta name="format-detection" content="telephone=no" /> <meta http-equiv="x-dns-prefetch-control" content="on"> <link rel="dns-prefetch" href="https://ws.tildacdn.com">  <meta name="robots" content="noindex" /> <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico"/> <link rel="apple-touch-icon" type="image/png" href="images/tild3763-3666-4462-b765-373830643362__clean_bot_logo_work_.png"> <link rel="icon" type="image/png" sizes="192x192" href="images/tild3763-3666-4462-b765-373830643362__clean_bot_logo_work_.png"> <!-- Assets --> <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script> <link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/> <link rel="stylesheet" href="css/tilda-blocks-page69976575.min.css?t=1749087106" type="text/css" media="all" onerror="this.loaderr='y';" /> <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&subset=latin,cyrillic" rel="stylesheet"> <script nomodule src="js/tilda-polyfill-1.0.min.js" charset="utf-8"></script> <script type="text/javascript">function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
+function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}</script> <script src="js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script> <script src="js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script> <script src="js/tilda-blocks-page69976575.min.js?t=1749087106" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="js/lazyload-1.3.min.export.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="js/tilda-zero-1.1.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="js/tilda-menu-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="js/tilda-skiplink-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script src="js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script> <script type="text/javascript">window.dataLayer=window.dataLayer||[];</script> <!-- Google Tag Manager --> <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WQ8GCBN');</script> <!-- End Google Tag Manager --> <script type="text/javascript">(function() {if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
+document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head> <body class="t-body" style="margin:0;"> <!--allrecords--> <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8699139" data-tilda-page-id="69976575" data-tilda-page-alias="service-calculator-2" data-tilda-formskey="6a1e8750489bfdbc33922394a8699139" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com"> <div id="rec1069957926" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!DOCTYPE html> <html lang="ru"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Калькулятор услуг Clean Bot</title> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style>
+        :root {
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --bg-main: #FFFFFF;
+            --bg-app: #F9FAFB; 
+            --bg-card: #FFFFFF;
+            --bg-cart: #FFFFFF;
+            --text-primary: #1F2937; 
+            --text-secondary: #6B7280; 
+            --text-placeholder: #9CA3AF;
+            --accent-primary: #3B82F6; 
+            --accent-primary-hover: #2563EB;
+            --border-color: #E5E7EB; 
+            --border-color-input: #D1D5DB;
+            --shadow-color-light: rgba(0, 0, 0, 0.03);
+            --shadow-color-medium: rgba(0, 0, 0, 0.06);
+            --danger-color: #EF4444; 
+            --danger-color-hover: #DC2626;
+            --gap-medium: 16px;
+            --radius-medium: 8px;
+            --radius-small: 6px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--bg-app);
+            color: var(--text-primary);
+            font-size: 14px;
+            line-height: 1.6;
+            padding-top: 20px; 
+        }
+
+        .app-container {
+            display: flex;
+            gap: var(--gap-medium);
+            max-width: 1600px; 
+            margin: 0 auto;
+            padding: 0 var(--gap-medium);
+        }
+
+        .main-content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-medium);
+            min-width: 0; /* Для корректной работы flex с overflow */
+        }
+
+        .app-header {
+            background-color: var(--bg-card);
+            padding: var(--gap-medium);
+            border-radius: var(--radius-medium);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 2px var(--shadow-color-light);
+        }
+        
+        .app-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: var(--gap-medium);
+        }
+
+        .search-and-filters {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-medium);
+            margin-bottom: var(--gap-medium);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 1em;
+            border: 1px solid var(--border-color-input);
+            border-radius: var(--radius-small);
+            color: var(--text-primary);
+            background-color: var(--bg-main);
+        }
+        .search-input::placeholder {
+            color: var(--text-placeholder);
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .category-filter-btn {
+            background-color: #F3F4F6; 
+            color: var(--text-secondary);
+            border: 1px solid transparent; 
+            padding: 6px 12px;
+            border-radius: var(--radius-small);
+            font-size: 0.9em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+        }
+        .category-filter-btn:hover {
+            background-color: #E5E7EB;
+            color: var(--text-primary);
+        }
+        .category-filter-btn.active {
+            background-color: var(--accent-primary);
+            color: white;
+            border-color: var(--accent-primary);
+        }
+
+        .services-wrapper {
+            background-color: var(--bg-card);
+            padding: var(--gap-medium);
+            border-radius: var(--radius-medium);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 2px var(--shadow-color-light);
+            overflow-y: auto; 
+            max-height: calc(100vh - 230px); /* Скорректировано */
+        }
+        
+        .service-section {
+            margin-bottom: calc(var(--gap-medium) * 1.5);
+        }
+        
+        .service-section-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--gap-medium);
+            padding: 8px 0;
+            background-color: var(--bg-card); 
+            position: sticky;
+            top: -17px; /* -16px (padding wrapper) -1px (border) */
+            z-index: 10;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .subsection-accordion .subsection-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0; 
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: var(--gap-medium);
+        }
+        .subsection-accordion .subsection-header:hover {
+            color: var(--accent-primary);
+        }
+
+        .subsection-title-text {
+            font-size: 1.1em;
+        }
+
+        .subsection-accordion .subsection-content {
+            display: none; 
+            padding-top: 8px;
+        }
+        .subsection-accordion.open .subsection-content {
+            display: block;
+        }
+        .subsection-accordion .chevron {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s ease-in-out;
+            flex-shrink: 0; /* Предотвращает сжатие иконки */
+        }
+        .subsection-accordion.open .chevron {
+            transform: rotate(90deg);
+        }
+
+        .service-items-grid {
+            display: grid;
+            gap: var(--gap-medium);
+        }
+
+        .service-item {
+            background-color: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-small);
+            padding: 12px;
+            box-shadow: 0 1px 2px var(--shadow-color-light);
+            transition: box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            min-height: 140px; /* Немного увеличено */
+        }
+        .service-item:hover {
+            box-shadow: 0 2px 4px var(--shadow-color-medium);
+            border-color: #D1D5DB;
+        }
+        .service-item h4 {
+            font-size: 1em;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            line-height: 1.4; /* Для лучшей читаемости заголовков услуг */
+        }
+        .service-controls {
+            display: flex;
+            flex-direction: column; 
+            gap: 8px;
+            margin-top: auto; 
+        }
+        .service-controls .price-and-inputs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .service-controls label {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+        .service-controls input[type="number"] {
+            width: 60px;
+            padding: 6px 8px;
+            border: 1px solid var(--border-color-input);
+            border-radius: 4px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .service-controls .price-info,
+        .service-controls .unit-display {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .service-controls .dynamic-price-display {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .add-to-cart-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background-color: var(--accent-primary);
+            color: white;
+            border: none;
+            padding: 8px 10px;
+            border-radius: var(--radius-small);
+            font-size: 0.85em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            width: 100%; 
+        }
+        .add-to-cart-btn:hover {
+            background-color: var(--accent-primary-hover);
+        }
+        .add-to-cart-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .service-item.is-formula .price-and-inputs {
+             flex-direction: column;
+             align-items: stretch; /* Чтобы инпут и цена занимали всю ширину */
+        }
+         .service-item.is-formula .price-and-inputs .area-input-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Растащить label и input */
+            gap: 8px;
+            width: 100%;
+            margin-bottom: 4px; /* Небольшой отступ */
+        }
+        .service-item.is-formula .price-and-inputs .price-info {
+            width: 100%;
+            text-align: right; /* Цену вправо */
+        }
+
+
+        .cart-sidebar {
+            flex: 1;
+            max-width: 380px; 
+            position: sticky;
+            top: 20px; 
+            height: calc(100vh - 40px); 
+            background-color: var(--bg-cart);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-medium);
+            padding: var(--gap-medium);
+            box-shadow: 0 1px 3px var(--shadow-color-light);
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-sidebar h2 {
+            font-size: 1.25em;
+            font-weight: 600;
+            margin-bottom: var(--gap-medium);
+            padding-bottom: var(--gap-medium);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+        #cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: var(--gap-medium);
+            /* Стилизация скроллбара для Webkit (Chrome, Safari, Edge) */
+        }
+        #cart-items::-webkit-scrollbar {
+            width: 6px;
+        }
+        #cart-items::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        #cart-items::-webkit-scrollbar-thumb {
+            background-color: #D1D5DB;
+            border-radius: 3px;
+        }
+        #cart-items::-webkit-scrollbar-thumb:hover {
+            background-color: #9CA3AF;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #F3F4F6; 
+            font-size: 0.9em;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        .cart-item-name {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .cart-item-desc {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+        .cart-item-price {
+            font-weight: 500;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+        .remove-btn {
+            background: none;
+            border: none;
+            color: var(--danger-color);
+            cursor: pointer;
+            padding: 4px;
+            margin-left: 8px;
+            line-height: 0; /* Для лучшего выравнивания SVG */
+        }
+        .remove-btn:hover {
+            color: var(--danger-color-hover);
+        }
+        .remove-btn svg {
+            width: 16px;
+            height: 16px;
+            display: block;
+        }
+        .cart-summary {
+            padding-top: var(--gap-medium);
+            border-top: 1px solid var(--border-color);
+            margin-bottom: var(--gap-medium);
+        }
+        .cart-summary-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+        .cart-summary-item span:last-child {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .cart-total {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: right;
+            padding-top: var(--gap-medium);
+            border-top: 2px solid var(--accent-primary);
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+
+        @media (min-width: 768px) { 
+            .service-items-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1200px) { 
+            .service-items-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 992px) { 
+            .app-container {
+                flex-direction: column;
+            }
+            .cart-sidebar {
+                position: relative;
+                top: 0;
+                height: auto;
+                max-width: 100%;
+                margin-top: var(--gap-medium);
+            }
+            .services-wrapper {
+                max-height: none; 
+            }
+            .service-section-title {
+                top: -1px; /* Для мобильных, т.к. wrapper не скроллится */
+            }
+        }
+
+    </style> </head> <body> <div class="app-container"> <div class="main-content"> <header class="app-header"> <h1 class="app-title">Калькулятор услуг Clean Bot</h1> <div class="search-and-filters"> <input type="text" id="search-input" class="search-input" placeholder="Поиск по названию услуги..."> <div class="category-filters" id="category-filters-container"> <!-- Фильтры категорий будут здесь --> </div> </div> </header> <div class="services-wrapper" id="services-list-container"> <!-- Услуги будут здесь --> </div> </div> <aside class="cart-sidebar"> <h2>Корзина</h2> <div id="cart-items"> <!-- Элементы корзины --> </div> <div class="cart-summary" id="cart-summary-details"> <!-- Итоги по разделам --> </div> <div class="cart-total">
+                Итого: <span id="total-price">0</span> Р
+            </div> </aside> </div> <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const servicesDataCSV = `Раздел,Подраздел,Наименование услуги,Стоимость,Единица измерения
+Уборка,Фиксированные уборки,Поддерживающая уборка,"=ROUND(ПЛОЩАДЬ * MAX(MIN(133 - ((ПЛОЩАДЬ - 1) * ((133 - 78) / 120)), 133), 78), 0)",уборка
+Уборка,Фиксированные уборки,Генеральная уборка,"=ROUND(ПЛОЩАДЬ * MAX(MIN(211 - ((ПЛОЩАДЬ - 1) * ((211 - 141) / 120)), 211), 141), 0)",уборка
+Уборка,Фиксированные уборки,Уборка после ремонта,"=ROUND(ПЛОЩАДЬ * MAX(MIN(336 - ((ПЛОЩАДЬ - 1) * ((336 - 242) / 120)), 336), 242), 0)",уборка
+Уборка,Дополнительные услуги,Мытьё душевой кабины,1590,шт
+Уборка,Дополнительные услуги,Мытьё кухонных шкафов изнутри (пустые),650,все
+Уборка,Дополнительные услуги,Мытьё кухонных шкафов изнутри (не пустые),650,шт
+Уборка,Дополнительные услуги,Мытьё посуды,1390,час
+Уборка,Дополнительные услуги,Глажка одежды,1390,час
+Уборка,Дополнительные услуги,Уборка на балконе,600,м²
+Уборка,Дополнительные услуги,Мытьё холодильника изнутри,750,шт
+Уборка,Дополнительные услуги,Мытьё микроволновки изнутри,400,шт
+Уборка,Дополнительные услуги,Мытьё духовки изнутри,650,шт
+Уборка,Дополнительные услуги,Чистка жалюзи,500,шт
+Уборка,Дополнительные услуги,Выброс мусора (до 6 кг),190,шт
+Уборка,Дополнительные услуги,Мытьё люстры (простой формы),390,шт
+Уборка,Дополнительные услуги,Мытьё люстры (средней формы),750,шт
+Уборка,Дополнительные услуги,Мытьё люстры (сложной формы),2190,шт
+Уборка,Дополнительные услуги,Дополнительный клинер,2990,чел
+Уборка,Дополнительные услуги,Дополнительные услуги,1390,час
+Уборка,Дополнительные услуги,Мытьё вытяжки,850,шт
+Уборка,Дополнительные услуги,Мытьё стиральной машины,850,шт
+Уборка,Дополнительные услуги,Выезд клинера за МКАД до 10 км от МКАД,490,чел
+Уборка,Дополнительные услуги,Чистка кондиционера,490,шт
+Доставка оборудования,Доставка оборудования,Доставка оборудования,3490,комплект
+Доставка оборудования,Доставка оборудования,Доставка оборудования и стремянки от 3 метров,5990,комплект
+Доставка оборудования,Доставка оборудования,Доплата за доставку оборудования за МКАД,90,км
+Уборка,Почасовые уборки,Поддерживающая уборка,3990,уборка
+Уборка,Почасовые уборки,Поддерживающая уборка - Доп.час,990,час
+Уборка,Почасовые уборки,Генеральная уборка,6990,уборка
+Уборка,Почасовые уборки,Генеральная уборка - Доп.час,1290,час
+Уборка,Почасовые уборки,Уборка после ремонта,11990,уборка
+Уборка,Почасовые уборки,Уборка после ремонта - Доп.час,1490,час
+Уборка,Почасовые уборки,Специфическая уборка,12990,уборка
+Уборка,Почасовые уборки,Специфическая уборка - Доп.час,1990,час
+Мытьё окон,Без акции,Мытьё 1 створки,450,шт
+Мытьё окон,Без акции,Мытьё 1 створки (дома),650,шт
+Мытьё окон,Без акции,Мытьё 2-х створчатого окна,890,шт
+Мытьё окон,Без акции,Мытьё 2-х створчатого окна с фрамугой,1340,шт
+Мытьё окон,Без акции,Мытьё двойного деревянного окна (1 створка),890,шт
+Мытьё окон,Без акции,Мытьё 3-х створчатого окна,1390,шт
+Мытьё окон,Без акции,Мытьё 3-х створчатого окна с фрамугой,1840,шт
+Мытьё окон,Без акции,Мытьё эркерного окна (1 створка),450,шт
+Мытьё окон,Без акции,Мытьё 1 створки на балконе,650,шт
+Мытьё окон,Без акции,Мытьё стандартного балкона до 4 метров,2890,шт
+Мытьё окон,Без акции,Мытьё стандартного балкона более 4 метров,5590,шт
+Мытьё окон,Без акции,Мытьё панорамного балкона до 4 метров,4590,шт
+Мытьё окон,Без акции,Мытьё панорамного балкона более 4 метров,8990,шт
+Мытьё окон,Без акции,Мытьё балконного блока,990,шт
+Мытьё окон,Без акции,Мытьё панорамного балконного блока,1790,шт
+Мытьё окон,Без акции,Мытьё панорамного окна (1 створка),890,шт
+Мытьё окон,Без акции,Мытьё панорамного окна (по квадратуре),550,м²
+Мытьё окон,Акция,Мытьё всех стандартных окон в квартире,2990,шт
+Мытьё окон,Дополнения к акции,Мытьё нестандартного окна,790,шт
+Мытьё окон,Дополнения к акции,Мытьё фрамуги,790,шт
+Мытьё окон,Дополнения к акции,Мытьё балконного блока,990,шт
+Мытьё окон,Дополнения к акции,Мытьё стандартного балкона (до 4 метров),1490,шт
+Мытьё окон,Дополнения к акции,Мытьё стандартного балкона (более 4 метров и до 6 метров),2590,шт
+Мытьё окон,Дополнения к акции,Мытьё стандартного балкона (более 6 метров и до 8 метров),3290,шт
+Мытьё окон,Дополнения к акции,Мытьё панорамного балкона (до 4 метров),3290,шт
+Мытьё окон,Дополнения к акции,Мытьё панорамного балкона (более 4 метров и до 6 метров),3990,шт
+Мытьё окон,Дополнения к акции,Мытьё панорамного балкона (более 6 метров и до 8 метров),4990,шт
+Химчистка,Обычная ткань,Химчистка дивана 2-местного,2990,шт
+Химчистка,Обычная ткань,Химчистка дивана 3-местного,3590,шт
+Химчистка,Обычная ткань,Химчистка углового дивана 4-местного,4190,шт
+Химчистка,Обычная ткань,Химчистка углового дивана 5-местного,4790,шт
+Химчистка,Обычная ткань,Химчистка углового дивана 6-местного,5390,шт
+Химчистка,Обычная ткань,Химчистка спального места,1490,шт
+Химчистка,Обычная ткань,Химчистка съёмной подушки до 30 см,350,шт
+Химчистка,Обычная ткань,Химчистка съёмной подушки 30-70 см,470,шт
+Химчистка,Обычная ткань,Химчистка кресла,1790,шт
+Химчистка,Обычная ткань,Химчистка кресла-стула,1590,шт
+Химчистка,Обычная ткань,Химчистка стула с мягкой спинкой,850,шт
+Химчистка,Обычная ткань,Химчистка стула без мягкой спинки,590,шт
+Химчистка,Обычная ткань,Химчистка кухонного уголока,2790,шт
+Химчистка,Обычная ткань,Химчистка пуфика,850,шт
+Химчистка,Обычная ткань,Химчистка каркаса кровати,2790,шт
+Химчистка,Обычная ткань,Химчистка изголовья кровати,2290,шт
+Химчистка,Деликатная ткань,Химчистка дивана 2-местного (деликатная),4190,шт
+Химчистка,Деликатная ткань,Химчистка дивана 3-местного (деликатная),5390,шт
+Химчистка,Деликатная ткань,Химчистка углового дивана 4-местного (деликатная),6590,шт
+Химчистка,Деликатная ткань,Химчистка углового дивана 5-местного (деликатная),7790,шт
+Химчистка,Деликатная ткань,Химчистка углового дивана 6-местного (деликатная),8990,шт
+Химчистка,Деликатная ткань,Химчистка съёмной подушки до 30 см (деликатная),590,шт
+Химчистка,Деликатная ткань,Химчистка съёмной подушки 30-70 см (деликатная),850,шт
+Химчистка,Деликатная ткань,Химчистка кресла (деликатная),2290,шт
+Химчистка,Деликатная ткань,Химчистка стула с мягкой спинкой (деликатная),1090,шт
+Химчистка,Деликатная ткань,Химчистка стула без мягкой спинки (деликатная),850,шт
+Химчистка,Деликатная ткань,Химчистка пуфика (деликатная),1190,шт
+Химчистка,Матрасы,Химчистка детского матраса - 1 сторона,1490,шт
+Химчистка,Матрасы,Химчистка детского матраса - 2 стороны,2090,шт
+Химчистка,Матрасы,Химчистка односпального матраса - 1 сторона,1890,шт
+Химчистка,Матрасы,Химчистка односпального матраса - 2 стороны,2890,шт
+Химчистка,Матрасы,Химчистка полуторного матраса- 1 сторона,2690,шт
+Химчистка,Матрасы,Химчистка полуторного матраса - 2 стороны,4190,шт
+Химчистка,Матрасы,Химчистка двуспального матраса - 1 сторона,3490,шт
+Химчистка,Матрасы,Химчистка двуспального матраса - 2 стороны,4790,шт
+Химчистка,Ковры,Химчистка ковра - Ковролин,490,м²
+Химчистка,Ковры,Химчистка ковра - Синтетика,590,м²
+Химчистка,Ковры,Химчистка ковра - Длинный ворс,690,м²
+Химчистка,Ковры,Химчистка ковра - Хлопок / Шерсть,650,м²
+Химчистка,Прочее,Химчистка подушки (Маленькая),390,шт
+Химчистка,Прочее,Химчистка подушки (Средняя),490,шт
+Химчистка,Прочее,Химчистка подушки (Большая),590,шт
+Химчистка,Прочее,Химчистка тюли (синтетика),350,м²
+Химчистка,Прочее,Химчистка тюли (натуральная или с подкладом),490,м²
+Химчистка,Прочее,Химчистка штор (синтетика),410,м²
+Химчистка,Прочее,Химчистка штор (натуральные),540,м²
+Химчистка,Прочее,Химчистка ламбрекены и пр. (синтетика),590,м²
+Химчистка,Прочее,Химчистка ламбрекены и пр. (натуральное),720,м²
+Химчистка,Прочее,Удаление неприятных запахов с мебели,1490,шт
+Химчистка,Прочее,Химчистка детской коляски,2390,шт`;
+
+    const plusIconSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" /></svg>`;
+    const chevronRightSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>`;
+    const removeIconSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" /></svg>`;
+
+
+    let servicesData = [];
+    const lines = servicesDataCSV.trim().split('\n');
+    for (let i = 1; i < lines.length; i++) { 
+        const line = lines[i];
+        const values = [];
+        let currentField = '';
+        let inQuotes = false;
+        for (const char of line) {
+            if (char === '"') { 
+                inQuotes = !inQuotes; 
+            } else if (char === ',' && !inQuotes) { 
+                values.push(currentField); 
+                currentField = ''; 
+            } else { 
+                currentField += char; 
+            }
+        }
+        values.push(currentField); 
+
+        if (values.length === 5) {
+            let rawCostField = values[3].trim();
+            // Проверяем, начинается ли строка с кавычки и знака равно, и заканчивается ли кавычкой
+            const isProperlyQuotedFormula = rawCostField.startsWith('"=') && rawCostField.endsWith('"');
+            
+            if (isProperlyQuotedFormula) {
+                rawCostField = rawCostField.substring(1, rawCostField.length - 1); // Убираем внешние кавычки
+            }
+
+            const service = {
+                id: `service-${i-1}`, 
+                razdel: values[0].trim(),
+                podrazdel: values[1].trim(),
+                name: values[2].trim().replace(/\s\s+/g, ' '), 
+                costRaw: rawCostField, // Используем обработанное значение
+                unit: values[4].trim(),
+                isFormula: false, 
+                formulaType: null, 
+                cost: 0
+            };
+
+            // Теперь проверяем начинается ли costRaw (уже без кавычек) со знака '='
+            if (service.costRaw.startsWith('=')) {
+                service.isFormula = true;
+                if (service.name.toLowerCase().includes('поддерживающая')) service.formulaType = 'podderzhivayushaya';
+                else if (service.name.toLowerCase().includes('генеральная')) service.formulaType = 'generalnaya';
+                else if (service.name.toLowerCase().includes('уборка после ремонта')) service.formulaType = 'posle_remonta';
+            } else { 
+                service.cost = parseFloat(service.costRaw) || 0; 
+            }
+            servicesData.push(service);
+        } else { 
+            console.warn(`Пропуск некорректной строки CSV (ожидалось 5 полей, получено ${values.length}):`, line, "Разобрано как:", values); 
+        }
+    }
+
+    const sectionOrder = ["Уборка", "Доставка оборудования", "Мытьё окон", "Химчистка"];
+    const subsectionOrder = {
+        "Уборка": ["Фиксированные уборки", "Дополнительные услуги", "Почасовые уборки"],
+        "Доставка оборудования": ["Доставка оборудования"],
+        "Мытьё окон": ["Акция", "Дополнения к акции", "Без акции"],
+        "Химчистка": ["Обычная ткань", "Деликатная ткань", "Матрасы", "Ковры", "Прочее"]
+    };
+
+    let cartItems = [];
+    let cartItemIdCounter = 0;
+
+    const servicesListContainer = document.getElementById('services-list-container');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const totalPriceEl = document.getElementById('total-price');
+    const cartSummaryDetailsEl = document.getElementById('cart-summary-details');
+    const searchInput = document.getElementById('search-input');
+    const categoryFiltersContainer = document.getElementById('category-filters-container');
+
+    function calculateFormulaPrice(formulaType, ploshad) {
+        if (ploshad <= 0) return 0;
+        let baseRatePerSqM, minRatePerSqM, calculatedPricePerSqM;
+        switch (formulaType) {
+            case 'podderzhivayushaya': 
+                baseRatePerSqM = 133; minRatePerSqM = 78;
+                calculatedPricePerSqM = baseRatePerSqM - ((ploshad - 1) * ((baseRatePerSqM - minRatePerSqM) / 120));
+                calculatedPricePerSqM = Math.max(Math.min(calculatedPricePerSqM, baseRatePerSqM), minRatePerSqM);
+                return Math.round(ploshad * calculatedPricePerSqM);
+            case 'generalnaya': 
+                baseRatePerSqM = 211; minRatePerSqM = 141;
+                calculatedPricePerSqM = baseRatePerSqM - ((ploshad - 1) * ((baseRatePerSqM - minRatePerSqM) / 120));
+                calculatedPricePerSqM = Math.max(Math.min(calculatedPricePerSqM, baseRatePerSqM), minRatePerSqM);
+                return Math.round(ploshad * calculatedPricePerSqM);
+            case 'posle_remonta': 
+                baseRatePerSqM = 336; minRatePerSqM = 242;
+                calculatedPricePerSqM = baseRatePerSqM - ((ploshad - 1) * ((baseRatePerSqM - minRatePerSqM) / 120));
+                calculatedPricePerSqM = Math.max(Math.min(calculatedPricePerSqM, baseRatePerSqM), minRatePerSqM);
+                return Math.round(ploshad * calculatedPricePerSqM);
+            default: return 0;
+        }
+    }
+    
+    function renderCategoryFilters() {
+        if (!categoryFiltersContainer) return;
+        categoryFiltersContainer.innerHTML = '';
+        sectionOrder.forEach(sectionName => {
+            const btn = document.createElement('button');
+            btn.className = 'category-filter-btn';
+            btn.textContent = sectionName;
+            const sectionId = `section-${sectionName.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase()}`; // Более надежное ID
+            btn.dataset.sectionId = sectionId
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.category-filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                const targetSection = document.getElementById(e.target.dataset.sectionId);
+                if (targetSection && servicesListContainer) {
+                    const headerOffset = document.querySelector('.app-header')?.offsetHeight || 0; 
+                    const stickyTitleOffset = targetSection.querySelector('.service-section-title')?.offsetHeight || 0;
+                    
+                    let scrollTargetPosition = targetSection.offsetTop - (parseFloat(getComputedStyle(servicesListContainer).paddingTop) || 0);
+                     
+                    if (servicesListContainer.contains(targetSection)) {
+                         scrollTargetPosition = targetSection.offsetTop - (parseFloat(getComputedStyle(targetSection.parentElement).paddingTop) || 0);
+                    }
+
+                    servicesListContainer.scrollTo({
+                        top: scrollTargetPosition - 5, // 5px - небольшой дополнительный отступ сверху
+                        behavior: 'smooth'
+                    });
+                }
+            });
+            categoryFiltersContainer.appendChild(btn);
+        });
+    }
+
+    function renderServices(filterText = "") {
+        if (!servicesListContainer) return;
+        servicesListContainer.innerHTML = '';
+        const searchTerm = filterText.toLowerCase().trim();
+
+        sectionOrder.forEach(sectionName => {
+            const sectionEl = document.createElement('div');
+            sectionEl.className = 'service-section';
+            const sectionId = `section-${sectionName.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase()}`;
+            sectionEl.id = sectionId;
+            
+            const sectionTitleEl = document.createElement('h2');
+            sectionTitleEl.className = 'service-section-title';
+            sectionTitleEl.textContent = sectionName;
+            sectionEl.appendChild(sectionTitleEl);
+
+            let sectionHasVisibleServices = false;
+
+            (subsectionOrder[sectionName] || []).forEach(subsectionName => {
+                const servicesInSubsection = servicesData.filter(s => 
+                    s.razdel === sectionName && 
+                    s.podrazdel === subsectionName &&
+                    (searchTerm === "" || s.name.toLowerCase().includes(searchTerm))
+                );
+
+                if (servicesInSubsection.length === 0 && searchTerm !== "") return;
+
+                const accordionEl = document.createElement('div');
+                accordionEl.className = 'subsection-accordion';
+                
+                const headerEl = document.createElement('div');
+                headerEl.className = 'subsection-header';
+                headerEl.innerHTML = `<span class="subsection-title-text">${subsectionName}</span> <span class="chevron">${chevronRightSVG}</span>`;
+                
+                const contentEl = document.createElement('div');
+                contentEl.className = 'subsection-content';
+                const gridEl = document.createElement('div');
+                gridEl.className = 'service-items-grid';
+                contentEl.appendChild(gridEl);
+                
+                accordionEl.appendChild(headerEl);
+                accordionEl.appendChild(contentEl);
+
+                headerEl.addEventListener('click', () => {
+                    accordionEl.classList.toggle('open');
+                });
+
+                if (servicesInSubsection.length > 0) {
+                    sectionHasVisibleServices = true;
+                     if (searchTerm !== "") { 
+                        accordionEl.classList.add('open');
+                    }
+                }
+
+                servicesInSubsection.forEach(service => {
+                    const serviceEl = document.createElement('div');
+                    serviceEl.className = 'service-item';
+                    serviceEl.dataset.id = service.id;
+                    if(service.isFormula) serviceEl.classList.add('is-formula');
+
+                    let controlsHtml = '';
+                    if (service.isFormula) {
+                        const areaInputId = `area-${service.id}`;
+                        const priceDisplayId = `price-display-${service.id}`;
+                        controlsHtml = `
+                            <div class="price-and-inputs"> <div class="area-input-group"> <label for="${areaInputId}">Площадь (м²):</label> <input type="number" id="${areaInputId}" min="1" value="10" data-service-id="${service.id}"> </div> <span class="price-info">Цена: <span id="${priceDisplayId}" class="dynamic-price-display">${calculateFormulaPrice(service.formulaType, 10)}</span> Р</span> </div> <button class="add-to-cart-btn" data-service-id="${service.id}">${plusIconSVG}Добавить</button>
+                        `;
+                    } else {
+                        const qtyInputId = `qty-${service.id}`;
+                        controlsHtml = `
+                            <div class="price-and-inputs"> <span class="price-info">Цена: ${service.cost} Р / ${service.unit}</span> <div style="display: flex; align-items: center; gap: 6px;"> <input type="number" id="${qtyInputId}" min="1" value="1" placeholder="1"> <span class="unit-display">${service.unit}</span> </div> </div> <button class="add-to-cart-btn" data-service-id="${service.id}">${plusIconSVG}Добавить</button>
+                        `;
+                    }
+                    serviceEl.innerHTML = `<h4>${service.name}</h4><div class="service-controls">${controlsHtml}</div>`;
+                    gridEl.appendChild(serviceEl);
+                });
+                
+                if (gridEl.children.length > 0) { 
+                    sectionEl.appendChild(accordionEl);
+                }
+            });
+            
+            if (sectionHasVisibleServices || (searchTerm === "" && (subsectionOrder[sectionName] || []).some(sub => servicesData.some(s => s.razdel === sectionName && s.podrazdel === sub)))) {
+                 servicesListContainer.appendChild(sectionEl);
+            }
+        });
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => btn.addEventListener('click', handleAddToCart));
+        document.querySelectorAll('input[type="number"][id^="area-"]').forEach(input => input.addEventListener('input', handleAreaInputChange));
+    }
+
+    function renderCart() {
+        if (!cartItemsContainer || !totalPriceEl || !cartSummaryDetailsEl) return;
+        cartItemsContainer.innerHTML = '';
+        let totalOverall = 0;
+        const totalsByRazdel = {};
+
+        cartItems.forEach(item => {
+            const cartItemEl = document.createElement('div');
+            cartItemEl.className = 'cart-item';
+            cartItemEl.dataset.cartId = item.cartId;
+            
+            const serviceDefinition = servicesData.find(s => s.id === item.serviceId);
+            if (serviceDefinition) {
+                if (!totalsByRazdel[serviceDefinition.razdel]) totalsByRazdel[serviceDefinition.razdel] = 0;
+                totalsByRazdel[serviceDefinition.razdel] += item.totalPrice;
+            }
+
+            cartItemEl.innerHTML = `
+                <div class="cart-item-details"> <div class="cart-item-name">${item.name}</div> <div class="cart-item-desc">${item.description}</div> </div> <div class="cart-item-price">${item.totalPrice} Р</div> <button class="remove-btn" data-cart-id="${item.cartId}" title="Удалить">${removeIconSVG}</button>
+            `;
+            cartItemsContainer.appendChild(cartItemEl);
+            totalOverall += item.totalPrice;
+        });
+        
+        totalPriceEl.textContent = totalOverall;
+        cartSummaryDetailsEl.innerHTML = '';
+        for (const razdel in totalsByRazdel) {
+            if (totalsByRazdel.hasOwnProperty(razdel)) {
+                const summaryItemEl = document.createElement('div');
+                summaryItemEl.className = 'cart-summary-item';
+                summaryItemEl.innerHTML = `<span>Итого ${razdel.toLowerCase()}:</span> <span>${totalsByRazdel[razdel]} Р</span>`;
+                cartSummaryDetailsEl.appendChild(summaryItemEl);
+            }
+        }
+        document.querySelectorAll('.remove-btn').forEach(btn => btn.addEventListener('click', handleRemoveFromCart));
+    }
+
+    function handleAreaInputChange(event) { 
+        const input = event.target;
+        const serviceId = input.dataset.serviceId;
+        const service = servicesData.find(s => s.id === serviceId);
+        const area = parseFloat(input.value) || 0;
+        if (service && service.isFormula) {
+            const price = calculateFormulaPrice(service.formulaType, area);
+            const priceDisplayElement = document.getElementById(`price-display-${service.id}`);
+            if (priceDisplayElement) priceDisplayElement.textContent = price;
+        }
+    }
+    function handleAddToCart(event) { 
+        const serviceId = event.currentTarget.dataset.serviceId; 
+        const service = servicesData.find(s => s.id === serviceId);
+        if (!service) return;
+        let quantity, totalPrice, description;
+        if (service.isFormula) {
+            const areaInput = document.getElementById(`area-${service.id}`);
+            if (!areaInput) return;
+            quantity = parseFloat(areaInput.value) || 0; 
+            if (quantity <=0) { alert('Площадь должна быть больше 0'); return; }
+            totalPrice = calculateFormulaPrice(service.formulaType, quantity);
+            description = `${quantity} м²`;
+            cartItems.push({ cartId: `cart-item-${cartItemIdCounter++}`, serviceId: service.id, name: service.name, description: description, area: quantity, quantity: 1, unit: service.unit, totalPrice: totalPrice, isFormula: true });
+        } else {
+            const qtyInput = document.getElementById(`qty-${service.id}`);
+            if (!qtyInput) return;
+            quantity = parseInt(qtyInput.value) || 0;
+            if (quantity <=0) { alert('Количество должно быть больше 0'); return; }
+            totalPrice = quantity * service.cost;
+            description = `${quantity} ${service.unit}`;
+            cartItems.push({ cartId: `cart-item-${cartItemIdCounter++}`, serviceId: service.id, name: service.name, description: description, quantity: quantity, unit: service.unit, pricePerUnit: service.cost, totalPrice: totalPrice, isFormula: false });
+        }
+        renderCart();
+    }
+    function handleRemoveFromCart(event) { 
+        const cartIdToRemove = event.currentTarget.dataset.cartId;
+        cartItems = cartItems.filter(item => item.cartId !== cartIdToRemove);
+        renderCart();
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            renderServices(e.target.value);
+        });
+    }
+    
+    renderCategoryFilters();
+    renderServices();
+    renderCart(); 
+    
+    console.log(`Разобрано ${servicesData.length} услуг.`);
+    if (servicesData.length !== 111) {
+        console.warn(`Ожидалось 111 услуг, но разобрано ${servicesData.length}. Проверьте CSV данные и логику парсинга.`);
+    }
+});
+</script> </body> </html> <!-- nominify end --> </div> </div> </div> </div> </div> <!--/allrecords--> <!-- Stat --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
+window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'61091e2b0217f9e103e8e655ef5f1c28','script','js/tilda-stat-1.0.min.js');},2000);</script> <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ8GCBN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) --> </body> </html>
