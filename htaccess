@@ -1,4 +1,114 @@
-ErrorDocument 403 /404.html
-ErrorDocument 404 /404.html
+ErrorDocument 403 /page44246721.html
+ErrorDocument 404 /page44246721.html
 
-DirectoryIndex index.html
+DirectoryIndex page44246443.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://clean-bot\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.clean-bot.ru [NC]
+RewriteRule ^(.*)$ https://clean-bot\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^glavnaya$ page44246443.html [NC]
+RewriteRule ^glavnaya/$ page44246443.html [NC]
+
+RewriteRule ^podderzhka$ page44246461.html [NC]
+RewriteRule ^podderzhka/$ page44246461.html [NC]
+
+RewriteRule ^sbp$ page44246477.html [NC]
+RewriteRule ^sbp/$ page44246477.html [NC]
+
+RewriteRule ^uborka_ofisov$ page44246483.html [NC]
+RewriteRule ^uborka_ofisov/$ page44246483.html [NC]
+
+RewriteRule ^uborka_vse_vklucheno$ page44246485.html [NC]
+RewriteRule ^uborka_vse_vklucheno/$ page44246485.html [NC]
+
+RewriteRule ^sertifikat$ page44246487.html [NC]
+RewriteRule ^sertifikat/$ page44246487.html [NC]
+
+RewriteRule ^uborka-posle-remonta$ page44246491.html [NC]
+RewriteRule ^uborka-posle-remonta/$ page44246491.html [NC]
+
+RewriteRule ^himchistka$ page44246507.html [NC]
+RewriteRule ^himchistka/$ page44246507.html [NC]
+
+RewriteRule ^premium$ page44246511.html [NC]
+RewriteRule ^premium/$ page44246511.html [NC]
+
+RewriteRule ^otzyvy$ page44246513.html [NC]
+RewriteRule ^otzyvy/$ page44246513.html [NC]
+
+RewriteRule ^vse_okna$ page44246515.html [NC]
+RewriteRule ^vse_okna/$ page44246515.html [NC]
+
+RewriteRule ^privacy$ page44246521.html [NC]
+RewriteRule ^privacy/$ page44246521.html [NC]
+
+RewriteRule ^oplata$ page44246525.html [NC]
+RewriteRule ^oplata/$ page44246525.html [NC]
+
+RewriteRule ^public_offer$ page44246533.html [NC]
+RewriteRule ^public_offer/$ page44246533.html [NC]
+
+RewriteRule ^footer$ page44246715.html [NC]
+RewriteRule ^footer/$ page44246715.html [NC]
+
+RewriteRule ^header$ page44246717.html [NC]
+RewriteRule ^header/$ page44246717.html [NC]
+
+RewriteRule ^error$ page44246721.html [NC]
+RewriteRule ^error/$ page44246721.html [NC]
+
+RewriteRule ^thanks$ page44246785.html [NC]
+RewriteRule ^thanks/$ page44246785.html [NC]
+
+RewriteRule ^l$ page44247033.html [NC]
+RewriteRule ^l/$ page44247033.html [NC]
+
+RewriteRule ^podpiska-na-klining$ page47013851.html [NC]
+RewriteRule ^podpiska-na-klining/$ page47013851.html [NC]
+
+RewriteRule ^podpiska-na-klining/sravnenie$ page47147279.html [NC]
+RewriteRule ^podpiska-na-klining/sravnenie/$ page47147279.html [NC]
+
+RewriteRule ^service-calculator$ page69929969.html [NC]
+RewriteRule ^service-calculator/$ page69929969.html [NC]
+
+RewriteRule ^service-calculator-2$ page69976575.html [NC]
+RewriteRule ^service-calculator-2/$ page69976575.html [NC]
+
+RewriteRule ^price$ page70058883.html [NC]
+RewriteRule ^price/$ page70058883.html [NC]
+
+RewriteRule ^v$ https://clean-bot\.ru/?utm_source=vk&utm_medium=referral&utm_campaign=social [R=301,NC]
+
+RewriteRule ^w$ https://clean-bot\.ru/?utm_source=whatsapp&utm_medium=referral&utm_campaign=social [R=301,NC]
+
+RewriteRule ^s$ https://clean-bot\.ru/?utm_source=sms&utm_medium=referral&utm_campaign=bitix24 [R=301,NC]
+
+RewriteRule ^t$ https://clean-bot\.ru/?utm_source=telegram&utm_medium=referral&utm_campaign=social [R=301,NC]
+
+RewriteRule ^n4990$ https://clean-bot\.ru/uborka_vse_vklucheno?utm_source=whatsapp&utm_medium=rassilka&utm_campaign=uborka_4990 [R=301,NC]
+
+RewriteRule ^moem-okna$ https://clean-bot\.ru/vse_okna?utm_source=whatsapp&utm_medium=rassilka&utm_campaign=okna_1990&utm_term=baza_d [R=301,NC]
+
+RewriteRule ^pomoem-okna$ https://clean-bot\.ru/vse_okna?utm_source=whatsapp&utm_medium=rassilka&utm_campaign=okna_1990&utm_term=v1 [R=301,NC]
+
+RewriteRule ^skidka$ https://clean-bot\.ru/uborka_vse_vklucheno?utm_source=sms&utm_medium=cpm&utm_campaign=uborka_4990&utm_content=skidka-do-311123&utm_term=1 [R=301,NC]
+
+RewriteRule ^privacy.html$ https://clean-bot\.ru/privacy [R=301,NC]
+
+RewriteRule ^thanks.php$ https://clean-bot\.ru/thanks [R=301,NC]
+
+RewriteRule ^kalkulyator_uborki/$ https://clean-bot\.ru/ [R=301,NC]
+
+RewriteRule ^uslugi/$ https://clean-bot\.ru/ [R=301,NC]
+
+
