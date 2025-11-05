@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #1B3A57;
+    --accent: #7AC3EC;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --background: #FFFFFF;
+    --surface: #F7F7F5;
+    --border: #E5E5E5;
+    --text-primary: #37352F;
+    --text-secondary: #787774;
+    --text-muted: #9B9B9B;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+
+  h1 {
+    @apply text-h1 font-bold leading-tight;
+  }
+
+  h2 {
+    @apply text-h2 font-semibold leading-tight;
+  }
+
+  h3 {
+    @apply text-h3 font-semibold leading-tight;
+  }
+
+  p {
+    @apply text-body leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+}
+
+/* Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
