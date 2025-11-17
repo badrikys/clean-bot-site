@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getServiceBySlug, getAllServices } from '@/lib/services-data';
 import { ServiceDetailContent } from '@/components/services/ServiceDetailContent';
+import { AllInclusiveLanding } from '@/components/all-inclusive/AllInclusiveLanding';
 import { COMPANY_INFO } from '@/lib/constants';
 
 interface ServicePageProps {
@@ -56,9 +57,14 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
     notFound();
   }
 
+  // Use specialized landing page for all-inclusive service
+  const ContentComponent = params.slug === 'all-inclusive'
+    ? AllInclusiveLanding
+    : ServiceDetailContent;
+
   return (
     <main className="min-h-screen">
-      <ServiceDetailContent service={service} />
+      <ContentComponent service={service} />
 
       {/* JSON-LD for SEO */}
       <script
