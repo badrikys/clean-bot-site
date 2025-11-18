@@ -44,9 +44,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ service }) => {
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed">
               <span className="font-bold text-primary text-3xl">5 990 ₽</span> —
-              финальная цена. Кухня, санузлы, окна, техника изнутри.{' '}
+              честная цена за 4 часа уборки. Кухня, санузлы, окна, техника изнутри —{' '}
               <span className="font-semibold text-text-primary">
-                Всё включено, без доплат-сюрпризов
+                всё можно включить в эти 4 часа без скрытых доплат
               </span>
             </p>
 

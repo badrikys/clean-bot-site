@@ -22,7 +22,7 @@ const uspItems = [
     icon: Lock,
     iconColor: 'text-success',
     bgColor: 'bg-success/10',
-    title: 'Прозрачная цена — никаких сюрпризов',
+    title: 'Прозрачная цена — всё ясно с самого начала',
     price: 'В 95% случаев цена = 5 990 ₽',
     features: [
       'Итоговая сумма известна до начала работы',

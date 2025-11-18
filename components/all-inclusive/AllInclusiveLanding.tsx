@@ -70,7 +70,7 @@ export const AllInclusiveLanding: React.FC<AllInclusiveLandingProps> = ({
       {/* 5. Time Calculator (Калькулятор/Квалификатор) */}
       <TimeCalculator />
 
-      {/* 6. Anti-Scam Block (Антиразвод) */}
+      {/* 6. Motivation and Quality Guarantee Block (Мотивация и гарантии качества) */}
       <AntiScam />
 
       {/* 7. Testimonials (Отзывы) */}
